@@ -1,11 +1,87 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Helvetica;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .title {
-  font-size: 72pt;
-  color: green;
+  font-size: 22pt;
+  float: left;
+}
+
+.job-title {
+  font-size: 52pt;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 32pt;
+  text-align: center;
+}
+
+.name {
+  font-size: 72px;
+  text-align: center;
+}
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+header {
+  background: white;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.links {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 80px;
+  padding-top: 25px;
+  position: relative;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: rgb(170, 0, 0);
+}
+
+nav a:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  top: 35px;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
