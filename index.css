@@ -32,6 +32,10 @@ header::after {
   clear: both;
 }
 
+.logo {
+  padding-left: 25px;
+}
+
 nav {
   float: right;
 }
